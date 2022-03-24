@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(217deg, #101010, #005a0f);
+    color: #cacaca;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+
+section{
+    height: 100vh;
+}
+.conteudo{
+    padding: 40px;
+    line-height: 28px;
+    text-shadow: 0 0 4px  rgb(61, 61, 61) ;
+}
+
+#thlou {
+    background-image: url(https://i.ytimg.com/vi/zm3IBGxHL3w/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+}
+
+#pokemon {
+    background-image: url(    https://i.pinimg.com/736x/a9/a6/8a/a9a68a02f404c0ac2980829bcd4495b3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 900;
+    text-shadow: 0 0 5px #0f0f0f;
+    color: yellow;
+    
+
+}
+
+#pokemon span {
+    color: rgb(255, 174, 0);
+}
+
+#pokemon h2{
+    text-shadow: 0 0 5px black;
+    
+}
+
+#stardew{
+    
+    background-image: url(https://wallpaperaccess.com/full/6184402.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+
+}
+
+#undertale {
+    
+    background-image: url(https://oyster.ignimgs.com/mediawiki/apis.ign.com/undertale/f/fa/Snowdin1.JPG?width=1280);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+}
+
+#yugioh{
+
+    background-image:  url(https://i.ytimg.com/vi/UvxVO1i4rEo/maxresdefault.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+}
+
+
+#crash {
+    
+    background-image:  url(https://images4.alphacoders.com/938/thumb-1920-938970.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+}
+.descricao {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    height: 25%;
+    font-size: 18px;
+ 
+
+}
+
+#stardew span {
+    color: rgb(251, 255, 0);
+    text-shadow: 0 0 20px black;
+}
+
+#stardew h2{
+    text-shadow: 0 0 5px rgb(82, 82, 82);
+    
+}
+
+
+.conteudo h2 {
+    margin-bottom: 30px;
+}
+
+
+.margem{
+    margin: 0 50px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px;
+}
+span {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(255, 217, 0);
+    text-shadow: none;
+}
+
+h2{
+    color: rgb(255, 217, 0);
+}
+
+
+.menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px  20px;
+    background-color: #404040
+
+}
+
+
+h2 {
+    margin-top: 5rem;
+}
+
+.centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MENU*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--white-color);
+    z-index: 1;
+    background-color: #404040;
+
+  }
+  
+  /*Separa a logo  do menu um em cada canto*/
+  .menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /*Deixa os elementos do menu um do lado do outro*/
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  /*define a como block para que ele defina o tamanho da barra do menu*/
+  .menu ul a {
+    display: block;
+    color: inherit;
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+  }
+  /*Criando animação ao colocar o cursor*/
+  .menu ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: 0%; /*Oculta a barra*/
+    background-color: rgb(255, 217, 0);
+    height: 0.2rem;
+    transition: all 300ms ease-in-out;
+  }
+  /* Mostra a barra quando tiver com o cursor em cima*/
+
+  .menu ul li a:hover{
+      color:rgb(255, 217, 0);
+  }
+
+  .menu ul a:hover::after {
+    width: 50%; /*Mostra a barra*/
+    left: 25%; /*Faz com que a animaçao comece do meio e va ate as bordas*/
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .manu-spacing{
+      height: 80px;
+  }
+
+  footer {
+      background: black !important; 
+      border-radius: 0px 0px 10px 10px !important;
+      font-family: arial;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: white;
+  }
